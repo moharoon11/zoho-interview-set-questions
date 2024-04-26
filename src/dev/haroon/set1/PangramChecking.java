@@ -32,6 +32,9 @@ public class PangramChecking {
 
         System.out.println(isPangram(sentence1));
         System.out.println(isPangram(sentence2));
+
+
+
     }
 
 
