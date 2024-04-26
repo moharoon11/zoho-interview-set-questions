@@ -1,5 +1,6 @@
 package dev.haroon.set1;
 
+import java.util.regex.Pattern;
 /**
  * 2. Password Strength
  *
@@ -33,6 +34,26 @@ public class PasswordStrength {
         System.out.println(checkStrength("Qwertyuiop")); // Medium
         System.out.println(checkStrength("QwertY123")); // Good
         System.out.println(checkStrength("Qwerty@123")); // Strong
+    }
+    private static final Pattern UPPERCASE_PATTERN = Pattern.compile("[A-Z]");
+    private static final Pattern DIGIT_PATTERN = Pattern.compile("\\d");
+    private static final Pattern SPECIAL_CHARACTER_PATTERN = Pattern.compile("[!@#$%^&*()-+]");
+
+    private static String checkStrengthUsingPatters(String password) {
+        boolean rule1 = password.length() >= 6;
+        boolean rule2 = UPPERCASE_PATTERN.matcher(password).find();
+        boolean rule3 = DIGIT_PATTERN.matcher(password).find();
+        boolean rule4 = SPECIAL_CHARACTER_PATTERN.matcher(password).find();
+
+        if (rule1 && rule2 && rule3 && rule4) {
+            return "Strong";
+        } else if (rule1 && ((!rule2 && rule3 && rule4) || (rule2 && !rule3 && rule4) || (rule2 && rule3 && !rule4))) {
+            return "Good";
+        } else if (rule1 && ((rule2 && !rule3) || (!rule2 && rule3) || (!rule2 && rule4) || (!rule3 && rule4))) {
+            return "Medium";
+        } else {
+            return "Weak";
+        }
     }
 
     private static String checkStrength(String password) {
