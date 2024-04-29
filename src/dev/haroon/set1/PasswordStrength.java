@@ -35,6 +35,7 @@ public class PasswordStrength {
         System.out.println(checkStrength("QwertY123")); // Good
         System.out.println(checkStrength("Qwerty@123")); // Strong
     }
+
     private static final Pattern UPPERCASE_PATTERN = Pattern.compile("[A-Z]");
     private static final Pattern DIGIT_PATTERN = Pattern.compile("\\d");
     private static final Pattern SPECIAL_CHARACTER_PATTERN = Pattern.compile("[!@#$%^&*()-+]");
@@ -85,5 +86,6 @@ public class PasswordStrength {
         } else {
             return "Weak";
         }
+
     }
 }
