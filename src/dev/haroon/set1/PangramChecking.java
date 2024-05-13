@@ -20,7 +20,6 @@ import java.util.Set;
 // note: using hashset is better approach then using array to solve this problem
 public class PangramChecking {
 
-
     public static void main(String[] args) {
         String sentence1 = "abcdefghijklmnopqrstuvwxyz";
         String sentence2 = "its not an pangram sentence";
@@ -33,10 +32,7 @@ public class PangramChecking {
         System.out.println(isPangram(sentence1));
         System.out.println(isPangram(sentence2));
 
-
-
     }
-
 
     // using hashset
     private static boolean checkIfPangram(String sentence) {
@@ -56,8 +52,7 @@ public class PangramChecking {
 
         return false;
     }
-
-
+    
     // using arrays
     private static boolean isPangram(String sentence) {
 
