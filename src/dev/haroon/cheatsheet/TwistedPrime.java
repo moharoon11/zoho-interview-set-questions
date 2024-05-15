@@ -3,7 +3,6 @@ package dev.haroon.cheatsheet;
 public class TwistedPrime {
 
     public static void main(String[] args) {
-
         System.out.println(isTwistedPrime(97));
         System.out.println(isTwistedPrime(43));
     }
