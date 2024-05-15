@@ -8,11 +8,8 @@ public class CheckForSubSequence {
         String b = "YADXCP";
         String aa = "gksrek";
         String bb = "geeksforgeeks";
-
         System.out.println(check(a, b));
         System.out.println(check(aa, bb));
-
-
     }
 
     public static boolean check(String a, String b) {
