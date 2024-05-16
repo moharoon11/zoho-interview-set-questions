@@ -9,7 +9,6 @@ public class MinNoCurrencyNotes {
     public static void calculate(int amount) {
 
         if(amount <= 0) return;
-
         int[] notes = {2000, 500, 200, 100, 50, 20, 10, 5, 1};
         int[] noteCounter = new int[notes.length];
 

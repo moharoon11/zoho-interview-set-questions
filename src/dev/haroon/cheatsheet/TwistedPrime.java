@@ -10,11 +10,9 @@ public class TwistedPrime {
     public static int isTwistedPrime(int num) {
         boolean isNumPrime = false;
         boolean isNumTwistedPrime = false;
-
         isNumPrime = PrintNPrimeNumbers.isPrime(num);
         int reverseNum = Integer.parseInt(new StringBuffer("" + num).reverse().toString());
         isNumTwistedPrime = PrintNPrimeNumbers.isPrime(reverseNum);
-
         return isNumPrime == isNumTwistedPrime ? 1 : 0;
     }
 

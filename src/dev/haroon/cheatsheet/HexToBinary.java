@@ -4,8 +4,6 @@ public class HexToBinary {
 
     public static void main(String[] args) {
         System.out.println("Binary value of 1BC is " + hexToDecimalThenBinary("1BC"));
-
-
     }
 
     public static String hexToDecimalThenBinary(String s) {
@@ -26,9 +24,6 @@ public class HexToBinary {
         return decimalToBinary(decimal);
     }
 
-
-
-
     public static String decimalToBinary(int decimal) {
         StringBuilder binary = new StringBuilder();
         while (decimal > 0) {
@@ -37,4 +32,5 @@ public class HexToBinary {
         }
         return binary.toString();
     }
+
 }
