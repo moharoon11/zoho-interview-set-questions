@@ -11,4 +11,5 @@ public class IndexOfExtraElement {
             if(a[i] != b[i]) return i;
         return a.length - 1;
     }
+
 }
