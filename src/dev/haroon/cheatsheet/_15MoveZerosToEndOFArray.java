@@ -6,9 +6,6 @@ public class _15MoveZerosToEndOFArray {
 
     public static void main(String[] args) {
 
-
-
-
              System.out.println(Arrays.toString(moveZeros(new int[] {1,2,0,0,3,4,0})));
              int[] arr1 = new int[]{1,3,0,0,4,4,0};
              moveZerosInplace(arr1);
