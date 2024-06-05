@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+// this question and find element appear ones are same
 public class _17SingleNumberII {
 
     public static void main(String[] args) {
@@ -32,14 +33,18 @@ public class _17SingleNumberII {
     public static int singleNumber(int[] nums) {
         Arrays.sort(nums);
 
+
+        // check the first one
         if(nums.length == 1 || nums[0] != nums[1]) {
             return  nums[0];
         }
 
+        // check the middle ones
         for(int i=1; i<nums.length - 1; i++) {
             if(nums[i] != nums[i-1] && nums[i] != nums[i+1]) return nums[i];
         }
 
+        // check the last one
         if(nums[nums.length - 1] != nums[nums.length -2]) return nums[nums.length-1];
 
         return -1;

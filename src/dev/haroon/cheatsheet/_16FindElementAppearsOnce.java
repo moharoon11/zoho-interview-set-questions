@@ -1,5 +1,8 @@
 package dev.haroon.cheatsheet;
 
+
+// use hashmap to caluculate frequency and optimize it
+// optimal solution is: bitwise xor operator
 public class _16FindElementAppearsOnce {
 
     public static void main(String[] args) {
