@@ -1,4 +1,4 @@
-package dev.haroon.cheatsheet;
+package dev.haroon.cheatsheet.part1;
 
 public class IndexOfExtraElement {
 

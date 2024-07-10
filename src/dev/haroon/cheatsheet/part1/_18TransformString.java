@@ -1,4 +1,4 @@
-package dev.haroon.cheatsheet;
+package dev.haroon.cheatsheet.part1;
 // leetcode 2027
 public class _18TransformString {
 

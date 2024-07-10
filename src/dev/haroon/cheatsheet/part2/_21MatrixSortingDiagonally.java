@@ -1,9 +1,10 @@
-package dev.haroon.cheatsheet;
+package dev.haroon.cheatsheet.part2;
 
-import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Collections;
 
-public class _20MatrixSorting {
+public class _21MatrixSortingDiagonally {
+
     public int[][] diagonalSort(int[][] arr) {
 
         int row = arr.length;
@@ -14,7 +15,7 @@ public class _20MatrixSorting {
             sort(arr, 0, i, row, col);
         }
 
-        for(int i=1; i<row; i++) {
+        for(int i=1; i<row-1; i++) {
             sort(arr, i, 0, row, col);
         }
 
@@ -42,6 +43,5 @@ public class _20MatrixSorting {
             arr[row++][col++] = values.get(idx++);
         }
     }
-
 
 }
